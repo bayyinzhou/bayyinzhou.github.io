@@ -1,0 +1,92 @@
+
+    * {
+      box-sizing: border-box;
+    }
+    
+    body {
+      margin: 0;
+    }
+    
+    /* Style the header */
+    .header {
+      background-color: #9db2f8;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    /* Style the top navigation bar */
+    .topnav {
+      display: flex;
+      flex-direction: row;  
+      overflow: hidden;
+      background-color: #333;
+      font-size: 20px;
+      font-weight: 700;
+      font-style: sans-serif;
+    }
+    
+    /* Responsive layout - makes a one column-layout instead of two-column layout */
+@media (max-width: 800px) {
+    .topnav {
+      flex-direction: column;
+    }
+  }
+
+    /* Style the topnav links */
+    .topnav a {
+      /* float: left; */
+      display: inline-block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    
+    /* Change color on hover */
+    .topnav a:hover {
+      background-color: #9db2f8;
+      color: black;
+    }
+
+    /* Change color on hover */
+    .topnav button:hover {
+        background-color: #9db2f8;
+        color: black;
+      }
+    /* product button */
+    .product {
+        background-color: #333;
+        color: white;
+        /* padding: 16px; */
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        font-weight: 700;
+        font-style: sans-serif;
+    }
+
+    /* product content*/
+    .content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+      
+      .content a {
+          float: none;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+      
+      .content a:hover {background-color: #f1f1f1}
+
+    /* useless liao */
+    /* Dropdown menu on hover */
+    .top_item:hover .content {
+        display: block;
+    }
