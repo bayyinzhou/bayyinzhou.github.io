@@ -27,7 +27,7 @@ $('#selectUl').hover(
     });
 
 function alertABC(){
-    alert("abc")
+    alert("Welcome")
 }
     $('.header').click(
         function(){
